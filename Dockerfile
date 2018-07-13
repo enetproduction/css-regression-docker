@@ -9,6 +9,6 @@ ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils 
 RUN apt-get -yq install fontforge ttfautohint
 ENV NODE_PATH /root/node_modules
 RUN export NODE_PATH=/root/node_modules
-RUN cd /root && npm i puppeteer node-sass inquirer backstopjs
+RUN cd /root && npm i chromium puppeteer node-sass inquirer backstopjs
 
 WORKDIR /build
